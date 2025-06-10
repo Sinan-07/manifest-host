@@ -1,25 +1,33 @@
 {
-  "$schema": "https://schemas.botframework.com/schemas/skills/v2.2/skill-manifest.json",
-  "$id": "freshbot-1dc3eee7-f785-494f-a7d2-c16fc719db77",
+  "$schema": "https://schemas.botframework.com/schemas/skill-manifest-2.0.0.json",
+  "$id": "EchoSkillBot",
+  "name": "Echo Skill bot",
+  "version": "1.0",
+  "description": "This is a sample echo skillllll",
+  "publisherName": "Microsoft",
+  "privacyUrl": "https://echoskillbot.contoso.com/privacy.html",
+  "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
+  "license": "",
+  "iconUrl": "https://echoskillbot.contoso.com/icon.png",
+  "tags": [
+    "sample",
+    "echo"
+  ],
   "endpoints": [
     {
-      "name": "americas",
+      "name": "default",
       "protocol": "BotFrameworkV3",
-      "description": "Production endpoint for SkillBot in the Americas",
+      "description": "Default endpoint for the skill",
       "endpointUrl": "https://464a-115-246-218-20.ngrok-free.app/api/messages",
       "msAppId": "9ba36700-735e-4146-bc51-3df976379a3c"
     }
   ],
-  "name": "skillbot",
-  "version": "v3",
-  "publisherName": "Cloudatica",
   "activities": {
-    "DynamicQuestion": {
+    "getTime": {
       "type": "event",
-      "name": "GetWeather"
-    },
-    "conversationUpdate": {
-      "type": "conversationUpdate"
+      "description": "Gets the current time",
+      "name": "getTime",
+      "value": {}
     }
   }
 }
