@@ -7,7 +7,7 @@
       "name": "default",
       "protocol": "BotFrameworkV3",
       "description": "Default endpoint",
-      "endpoint": "http://localhost:3978/api/messages"
+      "endpoint": "https://464a-115-246-218-20.ngrok-free.app/api/messages"
     }
   ],
   "actions": [
