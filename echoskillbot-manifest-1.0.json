@@ -18,7 +18,7 @@
       "name": "default",
       "protocol": "BotFrameworkV4",
       "description": "Default endpoint for the skill",
-      "endpointUrl": "https://83f5-115-246-218-20.ngrok-free.app/api/messages",
+      "endpointUrl": "http://localhost:3978/api/messages",
       "msAppId": "9ba36700-735e-4146-bc51-3df976379a3c"
     }
   ],
