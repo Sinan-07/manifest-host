@@ -16,7 +16,7 @@
   "endpoints": [
     {
       "name": "default",
-      "protocol": "BotFrameworkV4",
+      "protocol": "BotFrameworkV3",
       "description": "Default endpoint for the skill",
       "endpointUrl": "http://localhost:3978/api/messages",
       "msAppId": "9ba36700-735e-4146-bc51-3df976379a3c"
