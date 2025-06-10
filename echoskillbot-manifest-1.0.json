@@ -27,7 +27,7 @@
       "type": "event",
       "description": "Gets the current time",
       "name": "getTime",
-      "value": {"example": "test"}
+      "value": {}
     }
   }
 }
