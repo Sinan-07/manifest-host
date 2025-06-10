@@ -1,0 +1,32 @@
+{
+  "manifestVersion": "1.1",
+  "version": "1.0.0",
+  "id": "980d70c9-2955-43d7-8652-85d0de7226df",
+  "name": {
+    "short": "Weather Skill",
+    "full": "Weather Skill Bot"
+  },
+  "publisherName": "Avani Nayak",
+  "description": {
+    "short": "Provides weather information",
+    "full": "A skill bot that gives weather details for any city."
+  },
+  "endpoints": [
+    {
+      "name": "default",
+      "protocol": "BotFrameworkV4",
+      "description": "Default endpoint",
+      "endpointUrl": "https://6ece-103-157-239-71.ngrok-free.app/api/messages",
+      "msAppId": "980d70c9-2955-43d7-8652-85d0de7226df"
+    }
+  ],
+  "activities": [
+    {
+      "id": "message",
+      "type": "message",
+      "description": "Handles user messages"
+    }
+  ],
+  "authenticationConnections": [],
+  "dispatchModels": []
+}
