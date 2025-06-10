@@ -1,22 +1,33 @@
 {
-  "$schema": "https://schemas.botframework.com/schemas/skills/v1/skillManifest.schema",
-  "name": "EchoBotSkill",
-  "description": "A simple echo bot skill",
+  "$schema": "https://schemas.botframework.com/schemas/skill-manifest-2.0.0.json",
+  "$id": "EchoSkillBot",
+  "name": "Echo Skill bot",
+  "version": "1.0",
+  "description": "This is a sample echo skillllll",
+  "publisherName": "Microsoft",
+  "privacyUrl": "https://echoskillbot.contoso.com/privacy.html",
+  "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
+  "license": "",
+  "iconUrl": "https://echoskillbot.contoso.com/icon.png",
+  "tags": [
+    "sample",
+    "echo"
+  ],
   "endpoints": [
     {
       "name": "default",
       "protocol": "BotFrameworkV3",
-      "description": "Default endpoint",
-      "endpoint": "https://464a-115-246-218-20.ngrok-free.app/api/messages"
+      "description": "Default endpoint for the skill",
+      "endpointUrl": "https://464a-115-246-218-20.ngrok-free.app/api/messages",
+      "msAppId": "9ba36700-735e-4146-bc51-3df976379a3c"
     }
   ],
-  "actions": [
-    {
-      "id": "greeting",
-      "definition": {
-        "description": "Greet the user",
-        "slots": []
-      }
+  "activities": {
+    "getTime": {
+      "type": "event",
+      "description": "Gets the current time",
+      "name": "getTime",
+      "value": {}
     }
-  ]
+  }
 }
