@@ -1,114 +1,31 @@
 {
-  "$schema": "https://schemas.botframework.com/schemas/skills/v2.2/skill-manifest.json",
-  "$id": "SkillBot",
-  "name": "Sample skill definition that can handle multiple types of activities",
-  "version": "1.0",
-  "description": "This is a sample skill definition for multiple activity types",
-  "publisherName": "Microsoft",
-  "privacyUrl": "https://myskill.contoso.com/privacy.html",
-  "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
-  "license": "",
-  "iconUrl": "skillIcon.png",
-  "tags": [
-    "sample",
-    "travel",
-    "weather"
-  ],
-  "endpoints": [
-    {
-      "name": "americas",
-      "protocol": "BotFrameworkV3",
-      "description": "Production endpoint for SkillBot in the Americas",
-      "endpointUrl": "https://464a-115-246-218-20.ngrok-free.app/api/messages",
-      "msAppId": "9ba36700-735e-4146-bc51-3df976379a3c"
-    }
-  ],
-  "activities": {
-    "bookFlight": {
-      "description": "Books a flight",
-      "type": "event",
-      "name": "BookFlight",
-      "value": {
-        "$ref": "#/definitions/bookingInfo"
-      },
-      "resultValue": {
-        "$ref": "#/definitions/bookingInfo"
+    "$schema": "https://schemas.botframework.com/schemas/skills/skill-manifest-2.0.0.json",
+    "$id": "EchoSkill",
+    "name": "Echo Skill",
+    "version": "1.0",
+    "description": "This is a sample echo skill",
+    "publisherName": "Microsoft",
+    "privacyUrl": "https://72fd-115-246-218-20.ngrok-free.app/privacy.html",
+    "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
+    "license": "",
+    "iconUrl": "https://72fd-115-246-218-20.ngrok-free.app/icon.png",
+    "tags": [
+      "sample",
+      "skill"
+    ],
+    "endpoints": [
+      {
+        "name": "default",
+        "protocol": "BotFrameworkV3",
+        "description": "Default endpoint for the bot",
+        "endpointUrl": "https://72fd-115-246-218-20.ngrok-free.app/api/messages",
+        "msAppId": "9ba36700-735e-4146-bc51-3df976379a3c"
       }
-    },
-    "getWeather": {
-      "description": "Retrieves and returns the weather for the user's location",
-      "type": "invoke",
-      "name": "GetWeather",
-      "value": {
-        "$ref": "#/definitions/location"
-      },
-      "resultValue": {
-        "$ref": "#/definitions/weatherReport"
-      }
-    },
-    "message": {
-      "type": "message",
-      "description": "Receives the user's' utterance and attempts to resolve it using the skill's LU models"
-    },
-    "typing": {
-      "type": "typing"
-    },
-    "conversationUpdate": {
-      "type": "conversationUpdate"
-    }
-  },
-  "actions": [
-    {
-      "id": "BookFlight",
-      "type": "event",
-      "name": "BookFlight",
-      "description": "Books a flight",
-      "inputs": {
-        "$ref": "#/definitions/bookingInfo"
-      },
-      "outputs": {
-        "$ref": "#/definitions/bookingInfo"
-      }
-    },
-    {
-      "id": "GetWeather",
-      "type": "invoke",
-      "name": "GetWeather",
-      "description": "Retrieves and returns the weather for the user's location",
-      "inputs": {
-        "$ref": "#/definitions/location"
-      },
-      "outputs": {
-        "$ref": "#/definitions/weatherReport"
-      }
-    }
-  ],
-  "definitions": {
-    "bookingInfo": {
-      "type": "object",
-      "properties": {
-        "from": { "type": "string" },
-        "to": { "type": "string" },
-        "date": {
-          "type": "string",
-          "format": "date"
-        }
-      }
-    },
-    "location": {
-      "type": "object",
-      "properties": {
-        "city": { "type": "string" },
-        "country": { "type": "string" }
-      }
-    },
-    "weatherReport": {
-      "type": "object",
-      "properties": {
-        "city": { "type": "string" },
-        "temperature": { "type": "string" },
-        "condition": { "type": "string" }
+    ],
+    "activities": {
+      "message": {
+        "type": "message",
+        "description": "Echo messages from user"
       }
     }
   }
-}
