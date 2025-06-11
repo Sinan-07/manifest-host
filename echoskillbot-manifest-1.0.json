@@ -38,9 +38,9 @@
       }
     }
   ],
-  "activities": {
+  "activities": [
    
-    "message": {
+   {
        "id": "weather",
       "type": "message",
       "description": "Listens for general messages and can respond to queries about weather.",
@@ -49,5 +49,6 @@
         "properties": {}
       }
     }
-  }
+  ]
 }
+
