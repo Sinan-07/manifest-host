@@ -11,7 +11,7 @@
       "name": "production",
       "protocol": "BotFrameworkV3",
       "uri": "https://50e4-103-157-239-71.ngrok-free.app/api/messages", 
-      "msAppId": "980d70c9-2955-43d7-8652-85d0de7226df", 
+      "msAppId": "00000000-0000-0000-0000-000000000000", 
       "description": "Production endpoint for the My Chat Bot Skill."
     }
   ],
