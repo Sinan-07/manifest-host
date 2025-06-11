@@ -17,6 +17,9 @@
     "DynamicQuestion": {
       "type": "event",
       "name": "GetWeather"
+    },
+    "conversationUpdate": {
+      "type": "conversationUpdate"
     }
   }
 }
