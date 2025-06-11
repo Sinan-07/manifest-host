@@ -39,8 +39,9 @@
     }
   ],
   "activities": {
-    "id": "weather",
+   
     "message": {
+       "id": "weather",
       "type": "message",
       "description": "Listens for general messages and can respond to queries about weather.",
       "value": {
