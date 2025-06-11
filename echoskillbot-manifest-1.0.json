@@ -5,10 +5,10 @@
   "version": "1.0",
   "description": "This is a sample echo skill using the Microsoft Agents SDK.",
   "publisherName": "Microsoft (Modified by User)",
-  "privacyUrl": "https://710d-103-157-239-71.ngrok-free.app/privacy.html", 
+  "privacyUrl": "https://72fd-115-246-218-20.ngrok-free.app/privacy.html", 
   "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
   "license": "",
-  "iconUrl": "https://710d-103-157-239-71.ngrok-free.app/icon.png", 
+  "iconUrl": "https://72fd-115-246-218-20.ngrok-free.app/icon.png", 
   "tags": [
     "sample",
     "skill",
@@ -20,7 +20,7 @@
       "name": "default",
       "protocol": "BotFrameworkV3",
       "description": "Default endpoint for the Echo skill",
-      "endpointUrl": "https://fd30-103-157-239-71.ngrok-free.app/api/messages", 
+      "endpointUrl": "https://72fd-115-246-218-20.ngrok-free.app/api/messages", 
       "msAppId": "9ba36700-735e-4146-bc51-3df976379a3c"
     }
   ],
