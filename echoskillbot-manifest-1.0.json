@@ -19,7 +19,7 @@
         "protocol": "BotFrameworkV3",
         "description": "Default endpoint for the bot",
         "endpointUrl": "https://72fd-115-246-218-20.ngrok-free.app/api/messages",
-        "msAppId": ""
+        "msAppId": "00000000-0000-0000-0000-000000000000"
       }
     ],
     "activities": {
