@@ -1,33 +1,67 @@
 {
-  "$schema": "https://schemas.botframework.com/schemas/skills/skill-manifest-2.0.0.json",
-  "$id": "EchoSkill",
-  "name": "Echo Skill",
+  "$schema": "https://schemas.botframework.com/schemas/skills/v2.2/skill-manifest.json",
+  "$id": "WeatherBotSkill", 
+  "name": "Weather Bot Skill", 
   "version": "1.0",
-  "description": "This is a sample echo skill using the Microsoft Agents SDK.",
-  "publisherName": "Microsoft (Modified by User)",
-  "privacyUrl": "https://7a13-103-157-239-71.ngrok-free.app/privacy.html", 
-  "copyright": "Copyright (c) Microsoft Corporation. All rights reserved.",
+  "description": "A skill that provides current weather information for a specified city using OpenWeatherMap.",
+  "publisherName": "Your Name/Company",
+  "privacyUrl": "https://085d-103-157-239-71.ngrok-free.app/privacy.html",
+  "copyright": "Copyright (c) Your Name. All rights reserved.",
   "license": "",
-  "iconUrl": "https://7a13-103-157-239-71.ngrok-free.app/icon.png", 
+  "iconUrl": "https://085d-103-157-239-71.ngrok-free.app/weather_icon.png", 
   "tags": [
-    "sample",
-    "skill",
-    "echo",
-    "agents-sdk"
+    "weather",
+    "forecast",
+    "city",
+    "sample"
   ],
   "endpoints": [
     {
-      "name": "default",
+      "name": "production",
       "protocol": "BotFrameworkV3",
-      "description": "Default endpoint for the Echo skill",
-      "endpointUrl": "https://7a13-103-157-239-71.ngrok-free.app/api/messages", 
+      "description": "Production endpoint for the Weather Bot Skill.",
+      "endpointUrl": "https://085d-103-157-239-71.ngrok-free.app/api/messages", 
       "msAppId": "9ba36700-735e-4146-bc51-3df976379a3c"
     }
   ],
   "activities": {
     "message": {
       "type": "message",
-      "description": "Handles and echoes user messages, and provides skill version information."
+      "description": "Handles general conversational messages and can initiate weather queries."
+    
+    },
+    "conversationUpdate": {
+       "name": "conversationUpdate",
+        "type": "event",
+        "description": "Handles conversation update activities, e.g., welcoming new members."
+    }
+     ,
+     
+    
+    "getWeatherAction": { 
+      "type": "event",
+      "name": "getWeather",
+      "description": "Gets the current weather conditions for a given city.",
+      "value": { 
+        "type": "object",
+        "properties": {
+          "city": {
+            "type": "string",
+            "description": "The name of the city to get weather for."
+            
+          }
+        },
+        "required": ["city"] 
+      },
+      "resultValue": { 
+        "type": "object",
+        "properties": {
+          "weatherInfo": {
+            "type": "string",
+            "description": "A summary of the weather conditions (e.g., temperature, description)."
+          }
+        }
+      }
     }
   }
 }
