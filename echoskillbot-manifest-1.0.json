@@ -21,7 +21,7 @@
       "protocol": "BotFrameworkV3",
       "description": "Default endpoint for the Echo skill",
       "endpointUrl": "https://fd30-103-157-239-71.ngrok-free.app/api/messages", 
-      "msAppId": "9ba36700-735e-4146-bc51-3df976379a3c"
+      "msAppId": "00000000-0000-0000-0000-000000000000"
     }
   ],
   "activities": {
