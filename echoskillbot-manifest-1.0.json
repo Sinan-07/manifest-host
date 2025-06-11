@@ -4,17 +4,9 @@
   "name": "Weather Bot Skill", 
   "version": "1.0",
   "description": "A skill that provides current weather information for a specified city using OpenWeatherMap.",
-  "publisherName": "Your Name/Company",
+  "publisherName": "Avani",
   "privacyUrl": "https://085d-103-157-239-71.ngrok-free.app/privacy.html",
-  "copyright": "Copyright (c) Your Name. All rights reserved.",
-  "license": "",
-  "iconUrl": "https://085d-103-157-239-71.ngrok-free.app/weather_icon.png", 
-  "tags": [
-    "weather",
-    "forecast",
-    "city",
-    "sample"
-  ],
+  "iconUrl": "https://085d-103-157-239-71.ngrok-free.app/weather_icon.png",
   "endpoints": [
     {
       "name": "production",
@@ -34,10 +26,7 @@
        "name": "conversationUpdate",
         "type": "event",
         "description": "Handles conversation update activities, e.g., welcoming new members."
-    }
-     ,
-     
-    
+    },
     "getWeatherAction": { 
       "type": "event",
       "name": "getWeather",
@@ -47,8 +36,7 @@
         "properties": {
           "city": {
             "type": "string",
-            "description": "The name of the city to get weather for."
-            
+            "description": "The name of the city to get weather for." 
           }
         },
         "required": ["city"] 
