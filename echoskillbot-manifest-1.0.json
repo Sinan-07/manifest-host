@@ -6,7 +6,7 @@
       "name": "uniquename",
       "protocol": "BotFrameworkV3",
       "description": "Production endpoint for SkillBot in the Americas",
-      "endpointUrl": "https://b613-115-246-218-20.ngrok-free.app/api/messages",
+      "endpointUrl": "https://b15c-115-246-218-20.ngrok-free.app/api/messages",
       "msAppId": "9ba36700-735e-4146-bc51-3df976379a3c"
     }
   ],
